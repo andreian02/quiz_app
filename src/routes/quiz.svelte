@@ -292,15 +292,15 @@
 <section>
 	<h1>
 		<div class="welcome">易经六十四卦</div>
-		<div class="flex flex-col text-center space-y-4 pb-14">
+		<div class="flex flex-col text-center space-y-4 pb-7">
 			<!-- <span class="text-lg md:text-2xl">What is the meaning of...</span> -->
-			<span class="break-all text-6xl md:text-8xl mx-8">{term}</span>
-			<span class="break-all text-2xl md:text-2xl mx-8">{desc}</span>
+			<span class="break-all text-4xl md:text-8xl mx-8">{term}</span>
+			<span class="break-all text-1xl md:text-2xl mx-8">{desc}</span>
 			<span class="inline-flex justify-center items-center">{result}</span>
 			<progress value={$progress} />
 		</div>
 	</h1>
-	<div class="flex-col text-center space-y-4 pb-5 space-x-4 text-gray-700 tabular-nums">
+	<div class="flex-col text-center space-y-4 pb-3 space-x-4 text-gray-700 tabular-nums">
 		Select Mode:
 		<button
 			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
