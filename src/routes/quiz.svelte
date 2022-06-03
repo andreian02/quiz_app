@@ -383,7 +383,7 @@
 		{/each}
 	</div> -->
 
-	<div class="flex-col text-center space-y-4 pb-6 space-x-4 text-gray-700 tabular-nums">
+	<div class="flex-col text-center space-y-4 pb-2 space-x-4 text-gray-700 tabular-nums">
 		Your Score:
 		<span class="inline-flex justify-center items-center bg-green-200 w-10 h-8 rounded-md">
 			{rightCounter}
@@ -391,7 +391,7 @@
 		<span class="inline-flex justify-center items-center bg-red-200 w-10 h-8 rounded-md">
 			{wrongCounter}
 		</span>
-		<span class="inline-flex justify-center items-center bg-blue-200 w-20 h-8 rounded-md">
+		<span class="inline-flex justify-center items-center bg-blue-200 w-12 h-8 rounded-md">
 			{index + 1}/{current.length}
 		</span>
 
@@ -433,6 +433,7 @@
 	progress {
 		display: block;
 		width: 100%;
+		color: 'pink';
 		/* background-color: blue; */
 	}
 </style>
