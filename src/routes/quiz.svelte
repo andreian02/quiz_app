@@ -322,8 +322,8 @@
 
 <section>
 	<h1>
-		<div class="welcome">易经六十四卦</div>
 		<div class="flex flex-col text-center space-y-4 pb-7">
+			<div class="welcome">易经六十四卦</div>
 			<!-- <span class="text-lg md:text-2xl">What is the meaning of...</span> -->
 			<span class="break-all text-4xl md:text-8xl mx-8">{term}</span>
 			<span class="break-all text-1xl md:text-2xl mx-8">{desc}</span>
@@ -333,40 +333,41 @@
 	</h1>
 	<div class="flex-col text-center space-y-4 pb-3 space-x-4 text-gray-700 tabular-nums">
 		Select Mode:
+
 		<button
-			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={setALL}>全 64卦</button
 		>
 		<button
-			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={setONE}>乾</button
 		>
 		<button
-			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={setTWO}>兌</button
 		>
 		<button
-			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={setTHREE}>離</button
 		>
 		<button
-			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={setFOUR}>震</button
 		>
 		<button
-			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={setFIVE}>巽</button
 		>
 		<button
-			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={setSIX}>坎</button
 		>
 		<button
-			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={setSEVEN}>艮</button
 		>
 		<button
-			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={setEIGHT}>坤</button
 		>
 	</div>
@@ -382,7 +383,7 @@
 		{/each}
 	</div> -->
 
-	<div class="flex-col text-center space-y-4 pb-10 space-x-4 text-gray-700 tabular-nums">
+	<div class="flex-col text-center space-y-4 pb-6 space-x-4 text-gray-700 tabular-nums">
 		Your Score:
 		<span class="inline-flex justify-center items-center bg-green-200 w-10 h-8 rounded-md">
 			{rightCounter}
@@ -404,7 +405,7 @@
 		>
 	</div>
 
-	<div class="flex flex-col text-center space-y-4 pb-7">
+	<div class="flex flex-col text-center space-y-2 pb-4">
 		<!-- <input
 			type="text"
 			class="max-w-lg w-full p-4 my-2 border border-gray-300 rounded-md"
@@ -415,13 +416,13 @@
 		<form class:submitted on:submit|preventDefault={handleSubmit}>
 			<input
 				type="text"
-				class="max-w-lg w-full p-4 my-2 border border-gray-300 rounded-md"
+				class="max-w-lg w-full p-2 my-2 border border-gray-300 rounded-md"
 				placeholder="卦名"
 				bind:value
 				on:keyup|preventDefault={handleKeyup}
 			/>
 			<button
-				class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+				class="ml-auto px-2 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 				on:click={() => (submitted = true)}>submit</button
 			>
 		</form>
