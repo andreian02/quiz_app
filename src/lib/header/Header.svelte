@@ -21,6 +21,9 @@
 			<li class:active={$page.url.pathname === '/quiz'}>
 				<a sveltekit:prefetch href="/quiz">易经六十四卦练习</a>
 			</li>
+			<!-- <li class:active={$page.url.pathname === '/todos'}>
+				<a sveltekit:prefetch href="/todos">todos</a>
+			</li> -->
 			<li class:active={$page.url.pathname === '/about'}>
 				<a sveltekit:prefetch href="/about">About</a>
 			</li>

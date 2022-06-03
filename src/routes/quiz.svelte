@@ -143,6 +143,17 @@
 	let rightCounter = 0;
 	let wrongCounter = 0;
 
+	let submitted = false;
+	let isSuccessVisible = false;
+
+	function handleSubmit(e) {
+		isSuccessVisible = true;
+		let input = value.trim().toLowerCase();
+		checkAnswerHandler(input);
+		progress.set(progress_step);
+		value = '';
+	}
+
 	const reset = {
 		soft: () => {
 			current = shuffle(step1);
@@ -252,6 +263,25 @@
 		return full_array;
 	}
 
+	// function modifyIndex() {
+	// 	return (result = 'Answer is: ' + name);
+	// 	setTimeout(function () {}, 2000);
+
+	// 	// index += 1;
+	// 	// wrongCounter += 1;
+
+	// 	// console.log('skip.');
+
+	// 	// Delay for 200 msecs so the input renders before we try to add focus
+	// }
+
+	const modifyIndex = {
+		nextIndex: () => {
+			index += 1;
+			wrongCounter += 1;
+		}
+	};
+
 	// event handler when answer is entered
 	const handleKeyup = (event) => {
 		if (event.key == 'Enter' && value !== '') {
@@ -273,7 +303,7 @@
 			console.log('correct');
 		} else {
 			wrongCounter += 1;
-			result = 'Incorrect';
+			result = 'Incorrect ' + 'Answer is: ' + name;
 			console.log('incorrect');
 		}
 		setTimeout(function () {
@@ -366,20 +396,37 @@
 
 		<button
 			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+			on:click={modifyIndex.nextIndex}>Skip</button
+		>
+		<button
+			class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
 			on:click={reset.hard}>Reset</button
 		>
 	</div>
-</section>
 
-<div class="flex flex-row justify-center space-x-4 mx-4">
-	<input
-		type="text"
-		class="max-w-lg w-full p-4 my-2 border border-gray-300 rounded-md"
-		placeholder="卦名"
-		bind:value
-		on:keyup|preventDefault={handleKeyup}
-	/>
-</div>
+	<div class="flex flex-col text-center space-y-4 pb-7">
+		<!-- <input
+			type="text"
+			class="max-w-lg w-full p-4 my-2 border border-gray-300 rounded-md"
+			placeholder="卦名"
+			bind:value
+			on:keyup|preventDefault={handleKeyup}
+		/> -->
+		<form class:submitted on:submit|preventDefault={handleSubmit}>
+			<input
+				type="text"
+				class="max-w-lg w-full p-4 my-2 border border-gray-300 rounded-md"
+				placeholder="卦名"
+				bind:value
+				on:keyup|preventDefault={handleKeyup}
+			/>
+			<button
+				class="ml-auto px-4 py-1 border border-gray-200 bg-gray-200 text-gray-700 rounded-md hover:bg-red-500 hover:text-white"
+				on:click={() => (submitted = true)}>submit</button
+			>
+		</form>
+	</div>
+</section>
 
 <style>
 	progress {
