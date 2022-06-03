@@ -322,7 +322,7 @@
 
 <section>
 	<h1>
-		<div class="flex flex-col text-center space-y-4 pb-7">
+		<div class="flex flex-col text-center space-y-4 pb-3">
 			<div class="welcome">易经六十四卦</div>
 			<!-- <span class="text-lg md:text-2xl">What is the meaning of...</span> -->
 			<span class="break-all text-4xl md:text-8xl mx-8">{term}</span>
