@@ -275,6 +275,7 @@
 	// 	// Delay for 200 msecs so the input renders before we try to add focus
 	// }
 
+	// skip question
 	const modifyIndex = {
 		nextIndex: () => {
 			index += 1;
