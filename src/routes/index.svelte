@@ -30,7 +30,8 @@
 	</h2> -->
 
 	<!-- <Counter /> -->
-	<div class="flex flex-col text-center space-y-4 pb-3">
+	<div class="flex flex-col text-center space-y-4 pb-20">
+		<div class="text-1xl md:text-2xl font-semibold mx-8">易经六十四卦详解</div>
 		<div class="container">
 			{#await quotes}
 				<p>Loading quotes...</p>

@@ -1,18 +1,11 @@
 [
-    {
-        "quote": "Don’t expect to be motivated every day to get out there and make things happen. You won’t be. Don’t count on motivation. Count on Discipline.",
-        "author": "Jocko Willink"
-    },
-    {
-        "quote": "The purpose of life is finding the largest burden that you can bear and bearing it.",
-        "author": "Jordan B Peterson"
-    },
-    {
-        "quote": "When you think you’re done, you’re only at 40 percent of your body’s capability.",
-        "author": "David Goggins"
-    },
-    {
-        "quote": "Most men lead lives of quiet desperation.",
-        "author": "Joe Rogan"
-    }
+	{
+		"quote": "上坤下坤 纯阴卦 坤卦，明柔，地道贤生；厚载万物，运行不息而前进无疆，有顺畅之像。坤六爻皆虚，断有破裂之像，明暗、陷害、静止，测出行不走，行人不归。人物表示小人，由天大地小而取。",
+		"author": "坤为地"
+	},
+
+	{
+		"quote": "上乾下乾 纯阳卦 乾卦，阳刚，刚健，自强不息。乾六爻皆盈滴，故肥园，园满、亭通，成功、重大。但刚多易折，含欠安之像。",
+		"author": "乾为天"
+	}
 ]

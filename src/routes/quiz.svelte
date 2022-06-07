@@ -301,11 +301,11 @@
 
 		if (isCorrect) {
 			rightCounter += 1;
-			result = 'Correct';
+			result = '答对';
 			console.log('correct');
 		} else {
 			wrongCounter += 1;
-			result = 'Incorrect ' + 'Answer is: ' + name;
+			result = '答错 ' + '答案是: ' + name;
 			console.log('incorrect');
 		}
 		setTimeout(function () {
@@ -419,7 +419,7 @@
 			<input
 				type="text"
 				class="max-w-lg w-full p-2 my-2 border border-gray-300 rounded-md"
-				placeholder="卦名"
+				placeholder="卦名:"
 				bind:value
 				on:keyup|preventDefault={handleKeyup}
 			/>

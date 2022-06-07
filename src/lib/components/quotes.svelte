@@ -20,8 +20,8 @@
 	<blockquote>
 		{#key quote}
 			<div in:fade={options}>
+				<p class="quote name">{quote.author}:</p>
 				<p class="quote content">{quote.quote}</p>
-				<footer>{quote.author}</footer>
 			</div>
 		{/key}
 	</blockquote>
@@ -33,7 +33,7 @@
 	type="submit"
 >
 	<span class="icon"><i class="fas fa-redo" /></span>
-	<span>Generate Quote</span>
+	<span>取下一个卦</span>
 </button>
 
 <style>
