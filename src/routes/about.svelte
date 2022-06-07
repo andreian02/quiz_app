@@ -23,12 +23,14 @@
 	<h1>About this app</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app built to practise remembering 易经六十四卦.
+		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app built to get familar with 易经六十四卦.
 	</p>
 </div>
 
 <style>
 	.content {
+		text-align: center;
+		padding: 50px;
 		width: 100%;
 		max-width: var(--column-width);
 		margin: var(--column-margin-top) auto 0 auto;
