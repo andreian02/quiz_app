@@ -292,12 +292,13 @@
 			progress.set(progress_step);
 			value = '';
 		}
-		//console.log(value); print to console what I type
+		//console.log(value); //print to console what I type
 	};
 
 	// check answer function
 	function checkAnswerHandler(value) {
 		const isCorrect = value === name;
+
 		if (isCorrect) {
 			rightCounter += 1;
 			result = 'Correct';

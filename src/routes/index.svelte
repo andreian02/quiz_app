@@ -4,6 +4,8 @@
 
 <script>
 	import Counter from '$lib/Counter.svelte';
+	import Quote from '$lib/components/quotes.svelte';
+	export let quotes;
 </script>
 
 <svelte:head>
@@ -28,6 +30,17 @@
 	</h2> -->
 
 	<!-- <Counter /> -->
+	<div class="flex flex-col text-center space-y-4 pb-3">
+		<div class="container">
+			{#await quotes}
+				<p>Loading quotes...</p>
+			{:then quotes}
+				<Quote {quotes} />
+			{:catch error}
+				<p>{error.message}</p>
+			{/await}
+		</div>
+	</div>
 </section>
 
 <style>
