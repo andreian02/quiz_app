@@ -25,6 +25,9 @@
 	<p>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app built to get familar with 易经六十四卦.
 	</p>
+	<p>
+		Made by Andreian02....
+	</p>
 </div>
 
 <style>
