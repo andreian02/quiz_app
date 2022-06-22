@@ -68,7 +68,7 @@
 		{ title: '䷝', context: '丽日当天之象　光明远大之意', value: '离为火' },
 		{ title: '䷔', context: '喉中有物之象　夫妻怨怒之意', value: '火雷噬嗑' },
 		{ title: '䷱', context: '鼎器烹调之象　去故取新之意', value: '火风鼎' },
-		{ title: '䷾', context: '阴阳失调之象　上下不通之意', value: '火水未济' },
+		{ title: '䷿', context: '阴阳失调之象　上下不通之意', value: '火水未济' },
 		{ title: '䷷', context: '鸟焚其巢之象　乐极生悲之意', value: '火山旅' },
 		{ title: '䷢', context: '满地锦绣之象　良臣遇君之意', value: '火地晋' }
 	];
